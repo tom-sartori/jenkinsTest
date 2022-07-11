@@ -27,13 +27,4 @@ class AppJeuxPuzzleTest {
         contexte.resoudre();
         assertFalse(contexte.getSolution().isEmpty());
     }
-
-    @Test
-    public void test_Hanoi_comparaison () {
-        JeuPuzzle jeuPuzzle = new Hanoi(12);
-        Contexte contexte = new Contexte(jeuPuzzle);
-        contexte.resoudre();
-        System.out.println(contexte);
-        assertFalse(contexte.getSolution().isEmpty());
-    }
 }
